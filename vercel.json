@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "functions": {
+    "server.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    { "src": "/get-razorpay-key", "dest": "/server.js" },
+    { "src": "/create-order", "dest": "/server.js" },
+    { "src": "/verify-payment", "dest": "/server.js" },
+    { "src": "/thank-you", "dest": "/thank-you.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
