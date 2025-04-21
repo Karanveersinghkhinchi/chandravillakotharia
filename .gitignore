@@ -1,0 +1,17 @@
+.vercel
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Firebase service account key
+serviceAccountKey.json
+
+# Editor/IDE files
+.vscode/
+*.swp
+vercel.json

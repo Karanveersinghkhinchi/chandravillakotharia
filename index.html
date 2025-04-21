@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Chandra Villa in Kotharia, 6km from Nathdwara. Luxury 4BHK stay for groups with meals included at ₹19,999/night.">
+  <meta name="keywords" content="Chandra Villa, Kotharia villa, Nathdwara stay, luxury villa Rajasthan, group getaway Gujarat, villa with meals">
+  <meta name="author" content="Chandra Villa Team">
+  <title>Chandra Villa - Luxury 4BHK Stay in Kotharia, Nathdwara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM2T3VWLBG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VM2T3VWLBG');
+  </script>
+  <!-- Firebase Compat Scripts (v11.6.0) -->
+  <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics-compat.js"></script>
+  <!-- Razorpay Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span class="menu-toggle" id="menu-toggle">☰</span>
+    <div class="logo">
+      <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/fzqirekxtwluszvm6xtx" alt="Chandra Villa Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#nearby">Nearby</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#facilities" class="mobile-nav-link">Facilities</a></li>
+        <li><a href="#food" class="mobile-nav-link">Food</a></li>
+        <li><a href="#nearby" class="mobile-nav-link">Nearby</a></li>
+        <li><a href="#experiences" class="mobile-nav-link">Experiences</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sticky-book-now">
+      <button class="btn" id="sticky-book-now-btn">Book Now</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://res.cloudinary.com/dtymagpoi/video/upload/f_auto:video,q_auto/vxzfjo5ntgz0gfyqbueu" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to Chandra Villa Kotharia</h1>
+      <p>Experience luxury in Kotharia, just 3km from Nathdwara.</p>
+      <button class="btn" id="book-now-hero-btn">Book Now</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Chandra Villa</h2>
+    <p>Nestled in the serene surroundings of Nathdwara, Rajasthan, Chandravilla is a luxurious 4BHK villa that promises an unforgettable escape from the hustle and bustle of city life. Just a short drive from Udaipur, the City of Lakes, this exclusive retreat blends village vibes with modern comforts, offering guests a chance to unwind amidst nature’s beauty and stunning sunsets.
+
+      Chandravilla is designed for relaxation and fun, featuring a private swimming pool and a variety of games to keep everyone entertained—think pool table, badminton court, cricket space, carrom board, and chess. The villa boasts spacious luxury rooms with elegant interiors, perfect for soaking in the calm ambiance and creating cherished memories. Surrounded by lush greenery, it’s an ideal spot for families, friends, or couples looking to enjoy a laid-back yet upscale getaway.
+      
+      With its warm hospitality, recreational offerings, and picturesque setting, Chandravilla invites you to experience the charm of rural Rajasthan while indulging in the comforts of a premium villa retreat.</p>
+    <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/uxzaf45ggknsvfnbbidk" alt="Chandra Villa Exterior" class="responsive-img">
+    <div class="video-tour">
+      <h3>Take a Virtual Tour (Please Rotate your device)</h3>
+      <video controls class="responsive-video">
+        <source src="https://res.cloudinary.com/dtymagpoi/video/upload/f_auto:video,q_auto/qdcj9ws42i0nhu5dwbhw" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button class="btn" id="book-now-about-btn">Book Now</button>
+  </section>
+
+  <button class="scroll-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-slider">
+      <div class="slide active">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/fbqt4msekkizvj5mprcp" alt="Villa Image 1" class="responsive-img hover-img">
+        <div class="caption">Luxury Living Room</div>
+      </div>
+      <div class="slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/siw3l214pygvqy7wdzsi" alt="Villa Image 2" class="responsive-img hover-img">
+        <div class="caption">Exterior View</div>
+      </div>
+      <div class="slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/dningfywzk0zr6eyfsta" alt="Villa Image 3" class="responsive-img hover-img">
+        <div class="caption">Scenic Garden</div>
+      </div>
+    </div>
+    <div class="gallery-more">
+      <a href="#" class="btn" id="explore-more">Explore More Images</a>
+    </div>
+    <div class="gallery-modal" id="gallery-modal">
+      <span class="close-modal">×</span>
+      <div class="gallery-modal-grid">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/vzzyrxm5qjnv6ydatb9r" alt="Living Room" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/uxzaf45ggknsvfnbbidk" alt="Villa Exterior" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/fywwieiihyzjcwovquqg" alt="Pool Area" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/dningfywzk0zr6eyfsta" alt="Scenic Garden" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/lv3izpjr7kyrgx9m8bad" alt="Outdoor Area" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/q2gsptxbbx0yygqddtiz" alt="Interior" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/qmt4fjww67ughibgvv15" alt="Pool Table" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/nbq3tcrrkwoau3lhjb2e" alt="Relaxation Area" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/ivw9cpkkdeflrvv7xfwl" alt="Bedroom" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/fbqt4msekkizvj5mprcp" alt="Living Room 2" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/wvrmcpz1aslkvkdpzcbu" alt="Outdoor Seating" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/agbjvpiett5etxpjerxt" alt="Pool View" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/ny6vybo00fmxmyekbnys" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/l17tmgpk0pmtrlwdd0zh" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/gua2yqibbzndgte6iabb" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/kpkqoj2zdu1ukwhe8cvj" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/aigoieovpzocsbjivz4a" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/gayqujdyf76e3izm8f5h" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/eef2llykkoajgf0m1sux" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/vfk4jdoemo2afyscwltt" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/hjf13guiokyteallylba" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/kuktpewxlaxiprci1zxq" alt="Badminton Court" class="responsive-img hover-img">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/hkd46tuix1tqplrg9oso" alt="Badminton Court" class="responsive-img hover-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="facilities">
+    <h2>Our Facilities</h2>
+    <div class="facilities-grid">
+      <div class="facility">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/fbqt4msekkizvj5mprcp" alt="Luxury Room" class="responsive-img">
+        <h3>Luxury Rooms</h3>
+        <p>Spacious 4BHK villa with modern amenities for groups.</p>
+      </div>
+      <div class="facility">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/dhz082dqtwzn9ad3t1y0" alt="Swimming Pool" class="responsive-img">
+        <h3>Swimming Pool</h3>
+        <p>Relax and unwind in our pristine swimming pool.</p>
+      </div>
+      <div class="facility">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/dningfywzk0zr6eyfsta" alt="Scenic Garden" class="responsive-img">
+        <h3>Scenic Garden</h3>
+        <p>Enjoy the beauty of nature in our lush green garden.</p>
+      </div>
+      <div class="facility" id="games-facility">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/ny6vybo00fmxmyekbnys" alt="Games" class="responsive-img">
+        <h3>Games</h3>
+        <p>Enjoy indoor and outdoor games during your stay.</p>
+      </div>
+    </div>
+    <div class="games-modal" id="games-modal">
+      <span class="close-games-modal">×</span>
+      <div class="games-grid">
+        <div class="game-item">
+          <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/qmt4fjww67ughibgvv15" alt="Pool Table" class="responsive-img hover-img">
+          <p>Pool Table</p>
+        </div>
+        <div class="game-item">
+          <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/pfbk5ql9zbk4j1ebzzjk" alt="Cricket" class="responsive-img hover-img">
+          <p>Cricket</p>
+        </div>
+        <div class="game-item">
+          <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/n9buakjveess0j2c0tyt" alt="Chess" class="responsive-img hover-img">
+          <p>Chess</p>
+        </div>
+        <div class="game-item">
+          <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/snqusc3o825mpvyc1sia" alt="Carrom Board" class="responsive-img hover-img">
+          <p>Carrom Board</p>
+        </div>
+        <div class="game-item">
+          <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/ny6vybo00fmxmyekbnys" alt="Badminton Court" class="responsive-img hover-img">
+          <p>Badminton Court</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="food" class="food">
+    <h2>Our Culinary Delights</h2>
+    <div class="food-grid">
+      <div class="facility food-item">
+        <h3>Authentic Rajasthani Meals</h3>
+        <p>Savor delicious veg Rajasthani dishes included in your stay.</p>
+      </div>
+      <div class="facility food-item">
+        <h3>Breakfast Included</h3>
+        <p>Start your day with a hearty breakfast, included in the price.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nearby" class="nearby">
+    <h2>Nearby Attractions</h2>
+    <div class="nearby-grid">
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/rzicfrczpg38slchn7oc" alt="Shrinathji Temple" class="responsive-img">
+        <h3>Shrinathji Temple</h3>
+        <p>Just 6km away in Nathdwara, this temple is famous for its 7-year-old idol of Lord Krishna, with a fascinating history dating back to the 14th century.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/mmg9jnpndlsa7f6nxft2" alt="Statue of Belief" class="responsive-img">
+        <h3>Statue of Belief</h3>
+        <p>Just 8km away from Chandravillakotharia, this statue of Lord Shiva is the tallest in the world at 369 feet. It was inaugurated on October 29, 2022, and is located on a hillock called Ganesh Tekri.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/ezrdlvbwfxf6g50mpcuy" alt="Shreenathji Goushala" class="responsive-img">
+        <h3>Shreenathji Goushala</h3>
+        <p>Just 6.5km away from Chandravillakotharia, this Goushala is a serene place where you can connect with nature and witness the care provided to the cows. It is situated 3kms from the Shrinath Ji Temple.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/yb3oddgrrl3i5qdstlwm" alt="Shree Dwarkadhish Temple" class="responsive-img">
+        <h3>Shree Dwarkadhish Temple</h3>
+        <p>Shree Dwarkadhish temple situated in Kankroli 12km away from Chandravillakotharia is a temple of Lord Shree Krishna, known for their famous traditional culture and "Raal".</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/p1xbv7bpwrlo3pwonftu" alt="Rajsamand Lake" class="responsive-img">
+        <h3>Rajsamand Lake</h3>
+        <p>Rajsamand Lake, a major city attraction 2km far from Dwarkadhish temple, features the famous "Noochoki Paal", a favorite tourist and couple spot with a large waterview and beautiful sunset view.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/joxhr6qyi4tq1ahgjb82" alt="Eklingji Temple" class="responsive-img">
+        <h3>Eklingji Temple</h3>
+        <p>23km far from our place, Eklingji temple is a center of attraction in Udaipur situated in Delwada, a temple of Lord Shiva worshipped by Shree Maharana Pratap, known as Ekling Deewan.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/lzzvvvvd8jlxuljfpilf" alt="Haldighati" class="responsive-img">
+        <h3>Haldighati</h3>
+        <p>17.5km away from our place, this place holds the history of the Battle of Haldighati, with a museum and famous rosewater.</p>
+      </div>
+      <div class="facility nearby-item">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/g1r1u1lc6lva2xf1scng" alt="Kumbhalgarh Fort" class="responsive-img">
+        <h3>Kumbhalgarh Fort</h3>
+        <p>35km away from Chandravillakotharia, Kumbhalgarh Fort is a piece of art by Maharana Kumbha, featuring incredible architecture and the Parshuram Mahadev temple.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences" class="experiences">
+    <h2>Experiences at Chandra Villa</h2>
+    <div class="experiences-slider">
+      <div class="experience-slide active">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/afdo7kr1x3lrwzrncfvs" alt="Bird Watching" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Bird Watching</h3>
+          <p>Explore the diverse birdlife around Kotharia, including Red-vented Bulbuls, Sunbirds, and Flycatchers.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/wssazl3unaxjcxtv60nl" alt="Village Tour" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Village Tour</h3>
+          <p>Take a peaceful stroll through local villages, experiencing their culture and greenery.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/wuxzc80t8yuksaylov16" alt="Village Tour" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Village Tour</h3>
+          <p>Take a peaceful stroll through local villages, experiencing their culture and greenery.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/l4beyvhoer4xeptwr5ni" alt="Village Tour" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Village Tour</h3>
+          <p>Take a peaceful stroll through local villages, experiencing their culture and greenery.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/djgizfkcly3kzr7ewnox" alt="Sunrise/Sunset Tour" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Sunrise/Sunset Tour</h3>
+          <p>Enjoy guided tours to witness the breathtaking beauty of sunrise or sunset.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/charrwxlixvp2x7eatla" alt="Stargazing" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Stargazing</h3>
+          <p>Marvel at the starry skies from our rooftop, a perfect night-time retreat.</p>
+        </div>
+      </div>
+      <div class="experience-slide">
+        <img src="https://res.cloudinary.com/dtymagpoi/image/upload/f_auto,q_auto/dahtsluhc9g1zg2omp4a" alt="Tracking" class="responsive-img hover-img">
+        <div class="caption">
+          <h3>Tracking</h3>
+          <p>Embark on an adventurous tracking experience amidst the nearby hills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>"A truly luxurious experience! Chandra Villa was beyond our expectations."</p>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <h4>- Priya Sharma</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Perfect getaway spot with amazing facilities."</p>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <h4>- Rajesh Patel</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>Is the food vegetarian?</h3>
+        <p>Yes, we provide authentic Rajasthani vegetarian meals.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are the check-in and check-out times?</h3>
+        <p>Check-in is at 1 PM, and check-out is at 11 AM.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us On: +919521093366</h2>
+    <p>Location: Chandra Villa Kotharia, Shiv Vihar 2, Kotharia, 6km from Shrinathji Temple, Nathdwara, Rajasthan, India</p>
+    <p>Check-In: 1 PM | Check-Out: 11 AM</p>
+    <div class="booking-form" id="booking-form">
+      <h3>Book Your Stay</h3>
+      <form id="booking-details">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone" required>
+        <label for="checkin-date">Check-In Date:</label>
+        <input type="date" name="checkin" id="checkin-date" required>
+        <label for="checkout-date">Check-Out Date:</label>
+        <input type="date" name="checkout" id="checkout-date" required>
+        <input type="number" name="adults" placeholder="Number of Adults (Max 8)" min="1" max="8" required>
+        <input type="number" name="kids" placeholder="Number of Kids (Max 4)" min="0" max="4" required>
+        <label>
+          <input type="checkbox" id="terms-agree" required>
+          I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a>
+        </label>
+        <button type="button" class="btn" id="proceed-to-pay">Proceed to Pay ₹<span id="total-price">19999</span></button>
+      </form>
+    </div>
+    <button class="btn" id="book-now-contact-btn">Book Now</button>
+    <!-- Contact Form with Formspree (Optional) -->
+    <form action="https://formspree.io/f/mgvapbel" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.295416937614!2d73.856728315042!3d24.950694084003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU3JzAyLjUiTiA3M8KwNTEnMzIuMSJF!5e0!3m2!1sen!2sin!4v1698765432100" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Chandra Villa. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1AGZ84keBS/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/chandravillakotharia?igsh=MTdqN2phOXE1NzM0ZA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919521093366" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:chandravillakotharia@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919521093366?text=Hi,%20I%20want%20to%20book%20Chandra%20Villa" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
